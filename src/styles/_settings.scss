@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@100&family=Roboto+Condensed:wght@300&display=swap');
+
+$font-1:'Playfair Display';
+$font-2:'Raleway';
+$font-3:'Roboto Condensed';
+
+$color-1:#2a1d52;
+$color-2:#6c77f4;
+$color-3:rgb(99,164,233);
+$color-4:#4fedd2;
+$color-5:#36d0ea;
+
+$white:#ddd;
+$black:#333;
+
+$borderRadius:25px;
+$shadow:0 1px 3px #333;
+$minHeight: 95vh;
+
+
+
+$light-bg: #fff5;
+
+
+//animation
+$animeRotate: logo-spin infinite 20s linear;
+
+@keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+//Mixin
+@mixin circle($width) {
+    width: $width * 1px;
+    height: $width * 1px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@mixin verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
