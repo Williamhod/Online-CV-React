@@ -1,1 +1,34 @@
-@import '../../styles/settings';
+@import "../../styles/settings";
+
+.notFound {
+  @include verticalCenter;
+  height: 95vh;
+  width: 100%;
+  background: $color-3;
+  border-radius: $borderRadius;
+  text-align: center;
+  .notFoundContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h3 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: $borderRadius;
+    background: $color-5;
+    transition: 0.2s;
+
+    &:hover {
+      background: $color-4;
+    }
+  }
+}

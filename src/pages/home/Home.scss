@@ -1,2 +1,87 @@
-@import '../../styles/settings';
+@import "../../styles/settings";
 
+.home {
+  width: 100%;
+  .homeContent {
+    background: linear-gradient(82deg, #2a1d52 22%, transparent 100%);
+    min-height: $minHeight;
+    width: 100%;
+    border-radius: $borderRadius;
+    position: relative;
+    overflow: hidden;
+    &:after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: inherit;
+      background: url("../../media/IMG_1392.JPG") no-repeat center/cover;
+      z-index: -1;
+      filter: brightness(60%);
+}
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 13%;
+      font-family: $font-1;
+
+      h1 {
+        font-size: 5rem;
+        font-family: $font-3;
+        color: $color-5;
+        text-transform: uppercase;
+        text-shadow: 3px 6px 2px $black;
+      }
+      h2 {
+        font-size: 2.5rem;
+        padding: 1.5rem 0 7rem;
+        color: $color-3;
+        text-shadow: 1px 4px 1px $black;
+        @media screen and (max-width: 580px) {
+          padding: 0.5rem 0;
+        }
+      }
+      .pdf {
+        display: flex;
+        justify-content: space-around;
+
+        @media screen and (max-width: 850px) {
+          justify-content: space-between;
+          flex-direction: column;
+          align-items: center;
+          gap: 25px;
+        }
+        a {
+          font-size: 1.5rem;
+          background: $color-3;
+          padding: 1rem 2rem;
+          border-radius: $borderRadius;
+          box-shadow: 0 5px 1px rgb(15, 15, 15);
+          transition: 0.2s ease;
+
+          &:hover {
+            background: $color-4;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .homeContent {
+    margin: 0 !important;
+  }
+}
+@media screen and (max-width: 580px) {
+  .homeContent {
+    &:after {
+      background: url("../../media/IMG_1392.JPG") no-repeat 60% 50% / cover !important;
+    }
+    h1 {
+      font-size: 2.5rem !important;
+    }
+    h2 {
+      font-size: 1.8rem !important;
+    }
+  }
+}
