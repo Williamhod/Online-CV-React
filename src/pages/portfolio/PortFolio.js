@@ -1,12 +1,13 @@
-import React from 'react'
-import './PortFolio.scss'
+import React from "react";
+import ProjectList from "../../components/portfolio/ProjectList";
+import "./PortFolio.scss";
 
 function Portfolio() {
-    return (
-        <div>
-            trop de projets je peux pas tous te montré 
-        </div>
-    )
+  return (
+    <div className="portfolio">
+      <ProjectList />
+    </div>
+  );
 }
 
-export default Portfolio
+export default Portfolio;
