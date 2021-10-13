@@ -114,12 +114,7 @@
     grid-area: 3;
     @include verticalCenter;
 
-    .qrCode {
-      height: 120px;
-      width: 120px;
-
-     
-    }
+    
 
     ul {
       display: flex;

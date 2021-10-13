@@ -1,51 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@100&family=Roboto+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@100&family=Roboto+Condensed:wght@300&display=swap");
 
-$font-1:'Playfair Display';
-$font-2:'Raleway';
-$font-3:'Roboto Condensed';
+$font-1: "Playfair Display";
+$font-2: "Raleway";
+$font-3: "Roboto Condensed";
 
-$color-1:#2a1d52;
-$color-2:#6c77f4;
-$color-3:rgb(99,164,233);
-$color-4:#4fedd2;
-$color-5:#36d0ea;
+$color-1: #747070;
+$color-2: #d6894f;
+$color-3: #0f0f0f8c;
+$color-4: #ffebb3;
+$color-5: #47a3ad;
+$color-6: #1c373a;
 
-$white:#ddd;
-$black:#333;
+$white: #ddd;
+$black: #333;
 
-$borderRadius:25px;
-$shadow:0 1px 3px #333;
+$borderRadius: 25px;
+$shadow: 0 1px 3px #333;
 $minHeight: 95vh;
 
-
-
 $light-bg: #fff5;
-
 
 //animation
 $animeRotate: logo-spin infinite 20s linear;
 
 @keyframes logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
   }
-
-
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 //Mixin
 @mixin circle($width) {
-    width: $width * 1px;
-    height: $width * 1px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: $width * 1px;
+  height: $width * 1px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@mixin boxShadow {
+  box-shadow: -6px -6px 10px rgb(255 255 255 / 50%),
+    6px 6px 10px rgb(0 0 0 / 70%);
+  //box-shadow: 6px 6px 20px rgb(8 7 16 / 60%), -6px -6px 10px hsl(247deg 5% 69% / 40%);
+  backdrop-filter: blur(5px);
+}
+@mixin boxShadow2 {
+  box-shadow: 3px 3px 5px rgb(0 0 0 / 70%), -1px -1px 2px rgb(255 255 255 / 50%);
 }
 
 @mixin verticalCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 
 export const ProjectEmpty = () => (
-  <div
-    className="project"
-    style={{ background: "none", boxShadow: "none" }}
-  />
+  <div className="project" style={{ background: "none", boxShadow: "none" }} />
 );
 
 export default class Project extends Component {
@@ -16,6 +13,10 @@ export default class Project extends Component {
     this.setState({
       showInfo: !this.state.showInfo,
     });
+    // if (this.state.showInfo) {
+    //   document.body.classList.toggle('noScrollY')
+    // }
+    document.body.classList.toggle('noScrollY')
   };
 
   render() {

@@ -4,6 +4,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import { GoLocation } from "react-icons/go";
 import { BsPhone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
+import {FiGithub, FiLinkedin} from "react-icons/fi"
 
 function Contact() {
   return (
@@ -57,26 +58,18 @@ function Contact() {
         <div className="socialNetwork">
           <ul>
             <a
-              href="http://www.google.com"
+              href="https://www.linkedin.com/in/william-hodicq/"
               target="blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="./media/linkedin.png"
-                className="qrCode"
-                alt="qr code linkedin"
-              />
+              <FiLinkedin size={75} />
             </a>
             <a
-              href="http://www.google.com"
+              href="https://github.com/Williamhod"
               target="blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="./media/github.png"
-                className="qrCode"
-                alt="qr code github"
-              />
+              <FiGithub size={75}/>
             </a>
           </ul>
         </div>

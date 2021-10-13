@@ -3,7 +3,7 @@
 .home {
   width: 100%;
   .homeContent {
-    background: linear-gradient(82deg, #2a1d52 22%, transparent 100%);
+    background: linear-gradient(85deg, $color-6 22%, transparent 100%);
     min-height: $minHeight;
     width: 100%;
     border-radius: $borderRadius;
@@ -28,14 +28,14 @@
       h1 {
         font-size: 5rem;
         font-family: $font-3;
-        color: $color-5;
+        color: $color-2;
         text-transform: uppercase;
         text-shadow: 3px 6px 2px $black;
       }
       h2 {
         font-size: 2.5rem;
         padding: 1.5rem 0 7rem;
-        color: $color-3;
+        color: $color-4;
         text-shadow: 1px 4px 1px $black;
         @media screen and (max-width: 580px) {
           padding: 0.5rem 0;
@@ -53,14 +53,16 @@
         }
         a {
           font-size: 1.5rem;
-          background: $color-3;
+          color: darken($color-2,15%);
+          background: $color-4;
           padding: 1rem 2rem;
           border-radius: $borderRadius;
-          box-shadow: 0 5px 1px rgb(15, 15, 15);
+         @include boxShadow2;
           transition: 0.2s ease;
 
           &:hover {
-            background: $color-4;
+            color:lighten($color-4,15%);
+            background: $color-2;
           }
         }
       }
