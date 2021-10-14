@@ -23,7 +23,7 @@ export default class Project extends Component {
     let { name, languagesIcons, source, info, picture } = this.props.item;
 
     return (
-      <div className="project">
+      <div className={this.state.showInfo ? "project" : "project blur"}>
         <div className="icons">
           {languagesIcons.map((icon) => (
             <i className={icon} key={icon}></i>
@@ -36,7 +36,7 @@ export default class Project extends Component {
         </span>
 
         {this.state.showInfo && (
-          <div className="showInfos">
+          <div className="showInfos blur">
             <div className="infosContent">
               <div className="head">
                 <h2>{name}</h2>

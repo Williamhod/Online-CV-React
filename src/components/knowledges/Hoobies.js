@@ -1,10 +1,9 @@
 import React from 'react'
 import { SiYourtraveldottv } from 'react-icons/si'
-import { GiWaveSurfer } from 'react-icons/gi'
+import { GiWaveSurfer,GiMaterialsScience } from 'react-icons/gi'
 import { BsMusicNoteList } from 'react-icons/bs'
 import {IoGameControllerOutline} from 'react-icons/io5'
 import { BiMoviePlay } from 'react-icons/bi'
-import { GrTechnology } from 'react-icons/gr'
 
 function Hoobies() {
     const Hoobie = ({ label,Icon }) => (
@@ -23,7 +22,7 @@ function Hoobies() {
                 <Hoobie label="Musique" Icon={BsMusicNoteList} />
                 <Hoobie label="Jeux" Icon={IoGameControllerOutline} />
                 <Hoobie label="Cinéma" Icon={BiMoviePlay} />
-                <Hoobie label ="Nouvelles technologies" Icon={GrTechnology}/>
+                <Hoobie label ="Nouvelles technologies" Icon={GiMaterialsScience}/>
             </ul>
        </div>
     )

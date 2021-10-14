@@ -17,7 +17,8 @@
     .experience,
     .otherSkills,
     .hobbies {
-      background: $color-2;
+      background: darken($color-3,10%);
+      @include boxShadow3;
       border-radius: $borderRadius;
       padding: 0.8rem;
     }
@@ -25,7 +26,7 @@
       font-size: 1.4rem;
       margin-bottom: 1rem;
       font-family: $font-2;
-      color: $color-5;
+      color: $color-2;
       text-transform: uppercase;
     }
 
@@ -82,7 +83,7 @@
         padding-top: 0.5rem;
 
         li {
-          color: $color-1;
+          color: $color-5;
         }
         .progressBar {
           height: 0.4rem;
@@ -94,7 +95,7 @@
           &:after {
             content: "";
             position: absolute;
-            background: $color-3;
+            background: $color-4;
             border-radius: 50px;
             height: 0.4rem;
             width: 0;
@@ -119,6 +120,10 @@
       height: calc(100% - 10px);
       max-height: 500px;
       padding-right: 10px;
+      padding-left: 25px;
+
+      scrollbar-color:$color-2 $color-4;
+      scrollbar-width: thin;
 
       &:hover{
           padding-right: 0;
@@ -134,18 +139,19 @@
         
       }
       &::-webkit-scrollbar-track {
-        background-color: $color-2;
+        background-color: $color-4;
         margin: 30px;
       }
       &::-webkit-scrollbar-thumb {
-        background-color: $color-1;
+        background-color: $color-2;
         border-radius: 50px;
       }
       &::-webkit-scrollbar-thumb:hover {
-        background-color: lighten($color-1, 20%);
+        background-color: lighten($color-2, 20%);
       }
 
       h3 {
+        margin: 20px 0;
         grid-area: 1;
       }
       h4 {
@@ -153,10 +159,11 @@
         color: $color-5;
       }
       h5 {
-        color: $color-3;
+        color: $color-2;
         padding: 0.5rem 0 0.5rem 1rem;
       }
       p {
+        color:$color-4;
         text-align: justify;
         padding: 0 1rem;
       }
@@ -171,7 +178,9 @@
       grid-area: O;
       margin-right: 0.5rem;
 
+
       .list {
+        color:$color-5;
         display: flex;
         width: 80%;
         height: 100%;
@@ -181,27 +190,35 @@
         ul {
           height: 80%;
           display: grid;
-
-          i {
-            color: $color-5;
+          li{
+            display: flex;
+            align-items: center;
+            span{
+              margin-left: 7px;
+              color:$color-4;
+            }
           }
+          
         }
       }
     }
     .hobbies {
       grid-area: H;
       padding-left: 1.5rem;
+      color: $color-5;
 
       ul {
         height: 80%;
         display: grid;
 
         li {
+          color: $color-5;
           i {
             position: absolute;
             color: $color-5;
           }
           span {
+            color: $color-4;
             position: absolute;
             transform: translateX(2.2rem);
           }

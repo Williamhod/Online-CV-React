@@ -49,7 +49,7 @@ function Contact() {
                     alert("E-mail copié !");
                   }}
                 >
-                  hodicq.william@gmail.com"
+                  hodicq.william@gmail.com
                 </span>
               </CopyToClipboard>
             </li>

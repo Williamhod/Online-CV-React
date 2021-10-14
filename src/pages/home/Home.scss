@@ -76,8 +76,12 @@
 }
 @media screen and (max-width: 580px) {
   .homeContent {
+    .content{
+      top:40%!important;
+    }
     &:after {
       background: url("../../media/IMG_1392.JPG") no-repeat 60% 50% / cover !important;
+      height: 100vh;
     }
     h1 {
       font-size: 2.5rem !important;
