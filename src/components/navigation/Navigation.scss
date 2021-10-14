@@ -54,7 +54,6 @@
         position: relative;
 
         &:hover .nav-icon {
-          //transform: translate(3px, 3px);
           transform: translateX(3px);
         }
 
@@ -68,9 +67,6 @@
         }
 
         .nav-icon {
-          // position: absolute;
-
-          //transform: translateY(3px);
           transition: 0.2s ease;
         }
         span {
@@ -91,7 +87,6 @@
     justify-content: space-evenly;
 
     li {
-      //font-size: 1.5rem;
       background-color: $color-4;
       color: $color-2;
       border-radius: 50%;
@@ -99,12 +94,12 @@
       transition: 0.3s;
       cursor: pointer;
 
-      a{
+      a {
         color: $color-2;
       }
 
-      a:hover{
-       color:$color-4;
+      a:hover {
+        color: $color-4;
       }
       &:visited,
       &:focus {
@@ -177,7 +172,6 @@
       .nav-icon {
         width: 40px;
         height: 40px;
-        // transform: translateY(-13px);
       }
       span {
         display: none;
