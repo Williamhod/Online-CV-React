@@ -9,6 +9,9 @@
     border-radius: $borderRadius;
     position: relative;
     overflow: hidden;
+    @include boxShadow4;
+
+
     &:after {
       content: "";
       position: absolute;

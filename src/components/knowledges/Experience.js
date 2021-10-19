@@ -26,7 +26,7 @@ export default class Experience extends Component {
         id: 4,
         name: "Stage au Hilton Xi'an (Chine)",
         year: "2012 - 4 mois",
-        description: "Chef de rang sur divers service",
+        description: "Chef de rang sur divers services",
       },
       {
         id: 5,
@@ -40,7 +40,7 @@ export default class Experience extends Component {
         id: 1,
         name: "Formation OpenClassRooms - Développeur Web",
         year: "2020-2021",
-        description: "",
+        description: "Formation en ligne",
       },
       {
         id: 2,
@@ -71,7 +71,7 @@ export default class Experience extends Component {
     return (
       <div className="experience">
         <XpArticles main={training} title="Cursus Scolaire" />
-        <XpArticles main={experiences} title="Expérience Professionnelles" />
+        <XpArticles main={experiences} title="Expériences Professionnelles" />
       </div>
     );
   }

@@ -13,9 +13,7 @@ export default class Project extends Component {
     this.setState({
       showInfo: !this.state.showInfo,
     });
-    // if (this.state.showInfo) {
-    //   document.body.classList.toggle('noScrollY')
-    // }
+   
     document.body.classList.toggle('noScrollY')
   };
 

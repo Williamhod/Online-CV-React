@@ -43,7 +43,6 @@ $animeRotate: logo-spin infinite 20s linear;
 @mixin boxShadow {
   box-shadow: -6px -6px 10px rgb(255 255 255 / 50%),
     6px 6px 10px rgb(0 0 0 / 70%);
-  //box-shadow: 6px 6px 20px rgb(8 7 16 / 60%), -6px -6px 10px hsl(247deg 5% 69% / 40%);
   backdrop-filter: blur(5px);
 }
 @mixin boxShadow2 {

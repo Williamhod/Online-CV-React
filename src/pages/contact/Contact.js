@@ -14,19 +14,7 @@ function Contact() {
         <div className="contactBox">
           <h1>Contactez-moi</h1>
           <ul>
-            <li>
-              <GoLocation size={23} />
-              <span>
-                <a
-                  href="https://goo.gl/maps/UNubS1qYVirLmHmg9"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="location"
-                >
-                   Carcans
-                </a>
-              </span>
-            </li>
+           
             <li>
               <BsPhone size={23} />
               <CopyToClipboard text="0617156130">
@@ -52,6 +40,19 @@ function Contact() {
                   hodicq.william@gmail.com
                 </span>
               </CopyToClipboard>
+            </li>
+             <li>
+              <GoLocation size={23} />
+              <span>
+                <a
+                  href="https://goo.gl/maps/UNubS1qYVirLmHmg9"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="location"
+                >
+                   Carcans
+                </a>
+              </span>
             </li>
           </ul>
         </div>
@@ -80,4 +81,3 @@ function Contact() {
 
 export default Contact;
 
-//stop 3h36.42

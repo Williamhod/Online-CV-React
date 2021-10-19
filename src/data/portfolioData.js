@@ -5,7 +5,7 @@ export const portfolioData = [
     languages: ["css","all"],
     languagesIcons: ["fab fa-css3-alt"],
     source: "https://github.com/Williamhod/HodicqWilliam_2_31102020",
-    info: "Premier pas dans le développement web, from scratch. Réalisation d'une maquette simple auquel celle-ci devait être responsive et utiliser du flexbox.",
+    info: "Premier projet dans le développement web, from scratch. Réalisation d'une maquette simple auquel celle-ci devait être responsive et utiliser du flexbox.",
     picture: "./media/project1.png",
   },
   {
@@ -14,7 +14,7 @@ export const portfolioData = [
     languages: ["sass","all"],
     languagesIcons: ["fab fa-sass"],
     source: "https://github.com/Williamhod/WilliamHodicq_3_04012021",
-    info: "Reproduction d'une maquette incluant des animations.",
+    info: "Reproduction d'une maquette from scratch. Celle-ci avaient des animations imposées avec l'utilisation obligatoire de Sass.",
     picture: "./media/project2.png",
   },
   {
@@ -23,7 +23,7 @@ export const portfolioData = [
     languages: ["javascript", "css","all"],
     languagesIcons: ["fab fa-js", "fab fa-css3-alt"],
     source: "https://github.com/Williamhod/-HodicqWilliam_4_04022021",
-    info: "Amélioration du SEO d'un site deja existant avec la mise en place des techniques d'accessibilité",
+    info: "Réalisation du SEO d'un site déjà existant , par l'utilisation des bonnes pratiques, de google Analytics, optimisation du chargement de la page. Amélioration de l'accessibilité du site par la prise en compte des navigations alternatives.",
     picture: "./media/project3.png",
   },
   {
@@ -32,7 +32,7 @@ export const portfolioData = [
     languages: ["javascript", "css", "bootstrap","all"],
     languagesIcons: ["fab fa-js"],
     source: "https://github.com/Williamhod/HodicqWilliam_5_29032021",
-    info: "From scratch, réalisation du front d'un site de e-commerce. Réalisations des premières requêtes http, recupèration d'object provenant d'une db ...",
+    info: "From scratch, réalisation du front d'un site de e-commerce, possibilité d'utiliser Bootstrap. Ce projet a été le lancement du Javascript mais également la réalisation des requêtes http.",
     picture: "./media/project4.png",
   },
   {
@@ -41,7 +41,7 @@ export const portfolioData = [
     languages: ["javascript", "css","Mongoose","all"],
     languagesIcons: ["fab fa-js", "fab fa-css3-alt"],
     source: "https://github.com/Williamhod/HodicqWilliam_6_20062021",
-    info: "Réalisation du back-end, d'un site comparateur de sauces. Le back est réaliser via node/express et connecté a mongodb.L'application ce devait d'être protèger contre le top 10 de l'Owasp.",
+    info: "Réalisation du back-end, d'un site comparateur de sauces. Le back est réaliser via node.js/express et connecté a mongodb.L'application se devait d'être protégé contre le top 10 de l'Owasp.",
     picture: "./media/project5.png",
   },
   {
@@ -50,7 +50,7 @@ export const portfolioData = [
     languages: ["javascript", "react", "css", "MySQL","sass","all"],
     languagesIcons: ["fab fa-js", "fab fa-react", "fab fa-css3-alt","fab fa-sass"],
     source: "https://github.com/Williamhod/HodicqWilliam_7_12082021",
-    info: "Le but de ce projet était de réaliser un réseaux social d'entreprise par l'utilisation d'un framework front-end et du language sql pour la db. L'intégralité du projet ce devait d'être en js et sécuriser.",
+    info: "Le but de ce projet était de réaliser un réseau social d'entreprise par l'utilisation d'un framework front-end (React) et du language sql pour la db. L'intégralité du projet ce devait d'être en Javascript et respecter les normes de sécurité contre le top 10 de l'Owasp.",
     picture: "./media/project6.png",
   },
 ];
